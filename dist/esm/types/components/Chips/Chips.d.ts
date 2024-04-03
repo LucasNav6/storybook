@@ -1,11 +1,5 @@
-import React from 'react';
-
-interface ButtonProps {
-    label: string;
-}
-declare const Button: ({ label }: ButtonProps) => React.JSX.Element;
-
-interface ChipProps {
+import React from "react";
+export interface ChipProps {
     label: string;
     icon?: JSX.Element;
     onClose?: () => void;
@@ -15,5 +9,4 @@ interface ChipProps {
     isDisabled?: boolean;
 }
 declare const Chips: React.FC<ChipProps>;
-
-export { Button, Chips };
+export default Chips;

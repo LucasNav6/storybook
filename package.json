@@ -1,6 +1,6 @@
 {
   "name": "carpenter-library",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Carpenter Component Library for React",
   "scripts": {
     "rollup-build-lib": "rollup -c"
