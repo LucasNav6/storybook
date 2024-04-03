@@ -1,0 +1,407 @@
+.interactive_layer {
+  display: inline-flex;
+  padding: var(--carpenter-layout-core-spacing-xs-4-px-025-rem, 4px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--carpenter-layout-core-spacing-null, 0px);
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+}
+
+.filled_bad_minor {
+  background: var(--carpenter-color-core-bad0minor);
+  color: var(--carpenter-color-core-on0bad0minor);
+  fill: var(--carpenter-color-core-on0bad0minor);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0bad0minor12);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0bad0minor12);
+  }
+}
+.filled_good_minor {
+  background: var(--carpenter-color-core-good0minor);
+  color: var(--carpenter-color-core-on0good0minor);
+  fill: var(--carpenter-color-core-on0good0minor);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0good0minor12);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0good0minor12);
+  }
+}
+.filled_beware_minor {
+  background: var(--carpenter-color-core-beware0minor);
+  color: var(--carpenter-color-core-on0beware0minor);
+  fill: var(--carpenter-color-core-on0beware0minor);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0beware0minor12);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0beware0minor12);
+  }
+}
+.filled_bad {
+  background: var(--carpenter-color-core-bad);
+  color: var(--carpenter-color-core-on0bad);
+  fill: var(--carpenter-color-core-on0bad);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0bad8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0bad12);
+  }
+}
+.filled_good {
+  background: var(--carpenter-color-core-good);
+  color: var(--carpenter-color-core-on0good);
+  fill: var(--carpenter-color-core-on0good);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0good8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0good12);
+  }
+}
+.filled_beware {
+  background: var(--carpenter-color-core-beware);
+  color: var(--carpenter-color-core-on0beware);
+  fill: var(--carpenter-color-core-on0beware);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0beware8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0beware12);
+  }
+}
+.outline_bad {
+  border: 1px solid var(--carpenter-color-core-bad);
+  background: var(--carpenter-color-core-surface);
+  color: var(--carpenter-color-core-bad);
+  fill: var(--carpenter-color-core-bad);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0bad0minor8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0bad0minor12);
+  }
+}
+.outline_good {
+  border: 1px solid var(--carpenter-color-core-good);
+  background: var(--carpenter-color-core-surface);
+  color: var(--carpenter-color-core-good);
+  fill: var(--carpenter-color-core-good);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0good0minor8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0good0minor12);
+  }
+}
+.outline_beware {
+  border: 1px solid var(--carpenter-color-core-beware);
+  background: var(--carpenter-color-core-surface);
+  color: var(--carpenter-color-core-beware);
+  fill: var(--carpenter-color-core-beware);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0beware0minor8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0beware0minor12);
+  }
+}
+
+.filled_primary_minor {
+  background: var(--carpenter-color-core-primary0minor);
+  color: var(--carpenter-color-core-on0primary0minor);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0primary0minor8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0primary0minor12);
+  }
+}
+.filled_secondary_minor {
+  background: var(--carpenter-color-core-secondary0minor);
+  color: var(--carpenter-color-core-on0secondary0minor);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0secondary0minor8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0secondary0minor12);
+  }
+}
+.filled_accent_minor {
+  background: var(--carpenter-color-core-accent0minor);
+  color: var(--carpenter-color-core-on0accent0minor);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0accent0minor8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0accent0minor12);
+  }
+}
+
+.filled_primary {
+  background: var(--carpenter-color-core-primary);
+  color: var(--carpenter-color-core-on0primary);
+  fill: var(--carpenter-color-core-on0primary);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0primary8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0primary12);
+  }
+}
+.filled_secondary {
+  background: var(--carpenter-color-core-secondary);
+  color: var(--carpenter-color-core-on0secondary);
+  fill: var(--carpenter-color-core-on0secondary);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0secondary8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0secondary12);
+  }
+}
+.filled_accent {
+  background: var(--carpenter-color-core-accent);
+  color: var(--carpenter-color-core-on0accent);
+  fill: var(--carpenter-color-core-on0accent);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0accent8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0accent12);
+  }
+}
+
+.outline_primary {
+  background: var(--carpenter-color-core-surface);
+  color: var(--carpenter-color-core-primary);
+  border: 1px solid var(--carpenter-color-core-primary);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-primary8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-primary12);
+  }
+}
+.outline_secondary {
+  border: 1px solid var(--carpenter-color-core-secondary);
+  background: var(--carpenter-color-core-surface);
+  color: var(--carpenter-color-core-secondary);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-secondary8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-secondary12);
+  }
+}
+.outline_accent {
+  border: 1px solid var(--carpenter-color-core-accent);
+  background: var(--carpenter-color-core-surface);
+  color: var(--carpenter-color-core-accent);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-accent8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-accent12);
+  }
+}
+.outline_standard {
+  border: 1px solid var(--carpenter-color-core-outline);
+  background: var(--carpenter-color-core-surface);
+  color: var(--carpenter-color-core-on0surface);
+
+  &:not([disabled]):hover::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: var(--carpenter-color-opacity-on0surface8);
+  }
+  &:not([disabled]):active::before {
+    opacity: 1; // Cuando haces click y mantenes muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0surface12);
+  }
+}
+
+.main_container {
+  &.small {
+    height: var(--carpenter-layout-ext-measures-28-px-175-rem, 28px);
+  }
+  &.large {
+    height: var(--carpenter-layout-ext-measures-40-px-25-rem, 40px);
+  }
+
+  position: relative;
+  display: flex;
+  min-width: var(--carpenter-layout-ext-measures-64px_4rem, 64px);
+  max-width: var(--carpenter-layout-ext-measures-800px_50rem, 800px);
+  padding: var(--carpenter-layout-core-spacing-null, 0px);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--carpenter-layout-core-spacing-null, 0px);
+  border-radius: var(--carpenter-corner-core-full, 100px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--carpenter-corner-core-full, 100px);
+    pointer-events: none; // Para que no afecte la interacción con el botón
+    opacity: 0; // Puedes ajustar la opacidad según tus necesidades
+    //transition: opacity 100ms cubic-bezier(0.61, 1, 0.88, 1), opacity 100ms cubic-bezier(0.61, 1, 0.88, 1);
+  }
+}
+
+.state_layer {
+  display: flex;
+  padding: var(--carpenter-layout-core-spacing-null, 0px) var(--carpenter-layout-core-spacing-m_16px_1rem, 16px);
+  align-items: center;
+  gap: var(--carpenter-layout-ext-measures-8-px-05-rem, 8px);
+  flex: 1 0 0;
+  align-self: stretch;
+
+  text-align: center;
+
+  /* carpenter/typography/label/large */
+  font-family: Assistant;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.021px;
+}
+
+.icon {
+  margin: 0;
+  display: flex;
+  padding: var(--carpenter-layout-core-spacing-null, 0px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--carpenter-layout-core-spacing-null, 0px);
+}
+
+.close_button {
+  display: flex;
+  padding: var(--carpenter-layout-core-spacing-null, 0px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--carpenter-layout-core-spacing-null, 0px);
+
+  background: none;
+  margin: 0;
+  cursor: pointer;
+  color: inherit;
+  border: none;
+}
+
+.filled_disabled {
+  background: var(--carpenter-color-core-surface);
+  color: var(--carpenter-color-opacity-on0surface38);
+  pointer-events: none; // Para que no afecte la interacción con el botón
+  &::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0surface16);
+  }
+  .close_button {
+    fill: var(--carpenter-color-opacity-on0surface38);
+  }
+  .icon {
+    fill: var(--carpenter-color-opacity-on0surface38);
+  }
+}
+.outline_disabled {
+  background: var(--carpenter-color-core-surface);
+  color: var(--carpenter-color-opacity-on0surface38);
+  border: 1px solid var(--carpenter-color-core-outline);
+  pointer-events: none; // Para que no afecte la interacción con el botón
+  &::before {
+    opacity: 1; // Cuando haces hover muestra el pseudo-elemento
+    background: var(--carpenter-color-opacity-on0surface16);
+  }
+  .close_button {
+    fill: var(--carpenter-color-opacity-on0surface38);
+  }
+  .icon {
+    fill: var(--carpenter-color-opacity-on0surface38);
+  }
+}
