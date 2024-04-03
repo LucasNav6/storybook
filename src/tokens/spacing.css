@@ -1,0 +1,15 @@
+:root{
+  --carpenter-layout-core-spacing--16px-10: 1rem;
+  --carpenter-layout-core-spacing--24px-15: 1.5rem;
+  --carpenter-layout-core-spacing--32px-20: 2rem;
+  --carpenter-layout-core-spacing--36px-225: 2.25rem;
+  --carpenter-layout-core-spacing--56px-35: 3.5rem;
+  --carpenter-layout-core-spacing--64px-40: 4rem;
+  --carpenter-layout-core-spacing--104px-65: 6.5rem;
+  --carpenter-layout-core-spacing--208px-130: 13rem;
+  --carpenter-layout-core-spacing--224px-140: 14rem;
+  --carpenter-layout-core-spacing--240px-150: 15rem;
+  --carpenter-layout-core-spacing--320px-200: 20rem;
+  --carpenter-layout-core-spacing--416px-260: 26rem;
+  --carpenter-layout-core-spacing--800px-500: 50rem;
+}
