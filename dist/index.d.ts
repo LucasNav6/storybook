@@ -23,4 +23,19 @@ interface ChipProps {
 }
 declare const Chips: React.FC<ChipProps>;
 
-export { Button, Chips };
+interface PillProps {
+    label: string;
+    value: string;
+    onClick?: (value?: string) => void;
+    setIdSelected?: (value: string) => void;
+    color?: 'primary' | 'secondary' | 'accent' | 'primary_minor' | 'secondary_minor' | 'accent_minor';
+    isDisabled?: boolean;
+}
+interface AltPillsProps {
+    options: PillProps[];
+    color?: 'primary' | 'secondary' | 'accent' | 'primary_minor' | 'secondary_minor' | 'accent_minor';
+    selected?: string;
+}
+declare const AltPills: React.FC<AltPillsProps>;
+
+export { AltPills, Button, Chips };
